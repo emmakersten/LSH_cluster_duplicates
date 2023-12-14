@@ -80,6 +80,8 @@ def clean_data(string):
     string = string.replace('/', '')
     string = string.replace(')', '')
     string = string.replace('(', '')
+    string = string.replace('bestbuy', '')
+    string = string.replace('newegg', '')
     string = string.replace(':', "")
     return string
     
@@ -126,6 +128,8 @@ def clean_title(title):
     title = title.replace(')', '')
     title = title.replace('(', '')
     title = title.replace(':', "")
+    title = title.replace('bestbuy', '')
+    title = title.replace('newegg', '')
     title = re.sub('[^\sa-zA-z0-9.]+', '', title)
     return title
 
